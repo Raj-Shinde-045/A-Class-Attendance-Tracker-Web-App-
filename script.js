@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('selectedSubject', subjectValue);
         localStorage.setItem('selectedDate', dateValue);
 
-        // Redirect to the attendance page
-        window.location.href = '../index.html';
+        // Redirect to the main attendance page
+        window.location.href = 'main/main.html';
     });
 });

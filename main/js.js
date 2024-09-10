@@ -250,7 +250,7 @@ document.querySelector('.container').appendChild(exportBtn);
 // Add this near the top of the file with other element selections
 const backBtn = document.getElementById("backBtn");
 
-// Add this event listener near the bottom of the file
+// Update the back button event listener
 backBtn.addEventListener("click", function() {
-    window.location.href = 'landing page/land.html';
+    window.location.href = '../index.html';
 });
