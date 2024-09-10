@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="backBtn" class="back-btn">
+            <span class="back-arrow">&#8592;</span> Back to Landing Page
+        </button>
+        <h1>Class Attendance Tracker</h1>
+        <div id="student-card">
+            <h2 id="student-name">Student Name</h2>
+            <div class="swipe-instruction">Swipe right for present, left for absent</div>
+        </div>
+        <div class="buttons">
+            <button id="absent-btn">&#10005; Absent</button>
+            <button id="present-btn">&#10003; Present</button>
+            <button id="call-name-btn">Call Name</button>
+        </div>
+        <div class="lists">
+            <div class="list present-list">
+                <h3>Present Students</h3>
+                <ul id="present-list"></ul>
+            </div>
+            <div class="list absent-list">
+                <h3>Absent Students</h3>
+                <ul id="absent-list"></ul>
+            </div>
+        </div>
+        <button id="export-btn">Export to CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
