@@ -11,9 +11,26 @@
     <div class="container">
         <h1>Attendance Tracker</h1>
         <form id="classForm">
-            // ... existing form content ...
+            <div class="class-selection">
+                <h2>Select Class:</h2>
+                <div class="class-options">
+                    <div class="class-option" data-value="A">A</div>
+                    <div class="class-option" data-value="B">B</div>
+                    <div class="class-option" data-value="C">C</div>
+                </div>
+            </div>
+            <select id="subjectSelect" required>
+                <option value="">Select Subject</option>
+                <option value="math">Mathematics</option>
+                <option value="fcp">FCP</option>
+                <option value="electronics">Electronics</option>
+                <option value="communication">Communication Skills</option>
+                <option value="physics">Physics</option>
+                <option value="ed">Engineering Drawing</option>
+            </select>
+            <input type="date" id="datePicker" required>
+            <button type="submit">Take Attendance</button>
         </form>
-        <button id="viewRecordsBtn">View Records</button>
     </div>
     <script src="land.js"></script>
 </body>
